@@ -126,6 +126,7 @@ class TitleState extends MusicBeatState
 	var gfDance:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
+	var visualLogoBl:FlxSprite;
 
 	function startIntro()
 	{
@@ -175,16 +176,28 @@ class TitleState extends MusicBeatState
 		// bg.updateHitbox();
 		add(bg);*/
 
-		logoBl = new FlxSprite(-150, -100);
-		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
-		logoBl.antialiasing = true;
-		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
-		logoBl.animation.play('bump');
-		logoBl.updateHitbox();
-		logoBl.x += 600;
-		// logoBl.y += 90;
-		// logoBl.screenCenter();
-		// logoBl.color = FlxColor.BLACK;
+		if (!Main.watermarks) {
+			logoBl = new FlxSprite(-150, -100);
+			logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
+			logoBl.antialiasing = true;
+			logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
+			logoBl.animation.play('bump');
+			logoBl.updateHitbox();
+			logoBl.x += 600;
+			// logoBl.y += 90;
+			// logoBl.screenCenter();
+			// logoBl.color = FlxColor.BLACK;
+		}
+
+		if (Main.watermarks) {
+			visualLogoBl = new FlxSprite(-150, -100);
+			visualLogoBl.frames = Paths.getSparrowAtlas('logoBumpinVisual');
+			visualLogoBl.antialiasing = true;
+			visualLogoBl.animation.addByPrefix('bump visual', 'logo bumin visual', 24);
+			visualLogoBl.animation.play('bump visual');
+			visualLogoBl.updateHitbox();
+			visualLogoBl.x += 600;
+		}
 
 		gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.07);
 		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
@@ -194,15 +207,34 @@ class TitleState extends MusicBeatState
 		// gfDance.flipX = true;
 		gfDance.x += -500;
 		add(gfDance);
-		add(logoBl);
+		
+		if (!Main.watermarks)
+			{
 
-		FlxTween.angle(logoBl, logoBl.angle, -10, 0.95, {ease: FlxEase.quartInOut});
+			add(logoBl);
+			FlxTween.angle(logoBl, logoBl.angle, -10, 0.95, {ease: FlxEase.quartInOut});
 
-		new FlxTimer().start(0.95, function(tmr:FlxTimer)
-		{
-			if(logoBl.angle == -10) FlxTween.angle(logoBl, logoBl.angle, 10, 0.95, {ease: FlxEase.quartInOut});
-			else FlxTween.angle(logoBl, logoBl.angle, -10, 0.95, {ease: FlxEase.quartInOut});
-		}, 0);
+			new FlxTimer().start(0.95, function(tmr:FlxTimer)
+				{
+					if(logoBl.angle == -10) FlxTween.angle(logoBl, logoBl.angle, 10, 0.95, {ease: FlxEase.quartInOut});
+					else FlxTween.angle(logoBl, logoBl.angle, -10, 0.95, {ease: FlxEase.quartInOut});
+				}, 0);
+
+			}
+
+		if (Main.watermarks)
+			{
+			
+			add(visualLogoBl);
+			FlxTween.angle(visualLogoBl, visualLogoBl.angle, -10, 0.95, {ease: FlxEase.quartInOut});
+
+			new FlxTimer().start(0.95, function(tmr:FlxTimer)
+				{
+					if(visualLogoBl.angle == -10) FlxTween.angle(visualLogoBl, visualLogoBl.angle, 10, 0.95, {ease: FlxEase.quartInOut});
+					else FlxTween.angle(visualLogoBl, visualLogoBl.angle, -10, 0.95, {ease: FlxEase.quartInOut});
+				}, 0);
+
+			}
 
 		titleText = new FlxSprite(100, FlxG.height * 0.8);
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');
@@ -406,7 +438,13 @@ class TitleState extends MusicBeatState
 	{
 		super.beatHit();
 
-		logoBl.animation.play('bump');
+		if (!Main.watermarks) {
+			logoBl.animation.play('bump');
+		}
+		if (Main.watermarks) {
+			visualLogoBl.animation.play('bump visual');
+		}
+
 		danceLeft = !danceLeft;
 
 		if (danceLeft)

@@ -37,6 +37,7 @@ class MainMenuState extends MusicBeatState
 	var newGaming:FlxText;
 	var newGaming2:FlxText;
 	var logoBl:FlxSprite;
+	var visualLogoBl:FlxSprite;
 	var girlfriend:Character;
 	var options:TweenOptions = {type: PINGPONG};
 
@@ -86,20 +87,38 @@ class MainMenuState extends MusicBeatState
 		girlfriend.playAnim('cheer');
 		add(girlfriend);*/
 
-		logoBl = new FlxSprite(-150, -100);
-		logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
-		logoBl.antialiasing = true;
-		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
-		logoBl.animation.play('bump');
-		logoBl.updateHitbox();
-		logoBl.setGraphicSize(Std.int(logoBl.width * 0.95));
-		// logoBl.x += 600;
-		logoBl.y += 120;
-		logoBl.scrollFactor.x = 0;
-		logoBl.scrollFactor.y = 0.10;
-		logoBl.screenCenter();
-		logoBl.alpha = 0.55;
-		add(logoBl);
+		if (!Main.watermarks) {
+			logoBl = new FlxSprite(-150, -100);
+			logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
+			logoBl.antialiasing = true;
+			logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
+			logoBl.animation.play('bump');
+			logoBl.updateHitbox();
+			logoBl.setGraphicSize(Std.int(logoBl.width * 0.95));
+			// logoBl.x += 600;
+			logoBl.y += 120;
+			logoBl.scrollFactor.x = 0;
+			logoBl.scrollFactor.y = 0.10;
+			logoBl.screenCenter();
+			logoBl.alpha = 0.55;
+			add(logoBl);
+		}
+
+		if (Main.watermarks) {
+			visualLogoBl = new FlxSprite(-150, -100);
+			visualLogoBl.frames = Paths.getSparrowAtlas('logoBumpinVisual');
+			visualLogoBl.antialiasing = true;
+			visualLogoBl.animation.addByPrefix('bump', 'logo bumin visual', 24);
+			visualLogoBl.animation.play('bump');
+			visualLogoBl.updateHitbox();
+			visualLogoBl.setGraphicSize(Std.int(visualLogoBl.width * 0.95));
+			visualLogoBl.y += 120;
+			visualLogoBl.scrollFactor.x = 0;
+			visualLogoBl.scrollFactor.y = 0.10;
+			visualLogoBl.screenCenter();
+			visualLogoBl.alpha = 0.55;
+			add(visualLogoBl);
+		}
 
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);

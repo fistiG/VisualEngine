@@ -37,7 +37,7 @@ class StoryMenuState extends MusicBeatState
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
-		['', 'bf', 'gf'],
+		['gf', 'bf', ''],
 		['dad', 'bf', 'gf'],
 		['spooky', 'bf', 'gf'],
 		['pico', 'bf', 'gf'],
@@ -71,6 +71,7 @@ class StoryMenuState extends MusicBeatState
 	var sprDifficulty:FlxSprite;
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
+	var options:TweenOptions = {type: PINGPONG};
 
 	override function create()
 	{
@@ -106,6 +107,8 @@ class StoryMenuState extends MusicBeatState
 		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 
+		FlxTween.color(yellowBG, 3, FlxColor.GRAY, 0xFFF9CF51, options);
+
 		grpWeekText = new FlxTypedGroup<MenuItem>();
 		add(grpWeekText);
 
@@ -129,6 +132,8 @@ class StoryMenuState extends MusicBeatState
 			weekThing.screenCenter(X);
 			weekThing.antialiasing = true;
 			// weekThing.updateHitbox();
+
+			FlxTween.color(weekThing, 3, FlxColor.WHITE, FlxColor.BLUE, options);
 
 			// Needs an offset thingie
 			if (!weekUnlocked[i])
@@ -191,6 +196,8 @@ class StoryMenuState extends MusicBeatState
 		// add(rankText);
 		add(scoreText);
 		add(txtWeekTitle);
+
+		FlxTween.color(txtTracklist, 3, FlxColor.GRAY, 0xFFe55777, options);
 
 		updateText();
 
@@ -379,7 +386,7 @@ class StoryMenuState extends MusicBeatState
 		grpWeekCharacters.members[1].setCharacter(weekCharacters[curWeek][1]);
 		grpWeekCharacters.members[2].setCharacter(weekCharacters[curWeek][2]);
 
-		txtTracklist.text = "Tracks\n";
+		txtTracklist.text = "- Tracks -\n";
 		var stringThing:Array<String> = weekData[curWeek];
 
 		for (i in stringThing)

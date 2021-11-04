@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="logoBumpinVisual.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="logo bumin visual 0000" x="0" y="0" width="893" height="670" frameX="-28" frameY="-18" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0001" x="908" y="0" width="943" height="703"/>
+	<SubTexture name="logo bumin visual 0002" x="908" y="0" width="943" height="703"/>
+	<SubTexture name="logo bumin visual 0003" x="0" y="718" width="911" height="683" frameX="-19" frameY="-11" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0004" x="0" y="718" width="911" height="683" frameX="-19" frameY="-11" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0005" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0006" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0007" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0008" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0009" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0010" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0011" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0012" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0013" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+	<SubTexture name="logo bumin visual 0014" x="926" y="718" width="904" height="678" frameX="-22" frameY="-14" frameWidth="943" frameHeight="703"/>
+</TextureAtlas>
