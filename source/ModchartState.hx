@@ -787,6 +787,38 @@ class ModchartState
 					FlxTween.tween(getActorByName(id), {alpha: toAlpha}, time, {ease: FlxEase.circOut, onComplete: function(flxTween:FlxTween) { if (onComplete != '' && onComplete != null) {callLua(onComplete,[id]);}}});
 				});
 
+				// Visual Engine Edits
+
+				// Camera Shake
+				Lua_helper.add_callback(lua,"camShake", function(intense:Float) {
+					FlxG.camera.shake(intense);
+				});
+
+				// Camera Flash (Maybe Fix Later)
+				/*Lua_helper.add_callback(lua,"camFlash", function() {
+					FlxG.camera.flash(FlxColor.WHITE);
+				});*/
+
+				// Flash Warning Version (Was not tested):
+
+				/*if (FlxG.save.data.flashing) // If Needed?
+					{
+						Lua_helper.add_callback(lua,"camFlash", function() {
+							FlxG.camera.flash(FlxColor.WHITE);
+						});
+					}
+				else
+					{
+						trace('Flashing Option is not toggled on!')
+						throw('Error: Flashing is not toggled on, you cannot use this function!')
+					}*/
+
+				// Play/Load Sounds (UNFINISHED)
+
+				// Lua_helper.add_callback(lua,"loadSound", function(MP3Url:String, Looped:Bool, ))
+
+
+
 				//forgot and accidentally commit to master branch
 				// shader
 				

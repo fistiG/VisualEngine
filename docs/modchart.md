@@ -1,7 +1,5 @@
 # Lua Modcharts
 
-In the 1.4.2 release of Kade Engine, we introduced Mod Charts. Mod Charts are a way of changing gameplay without hard coded values. This is achieved by using the Lua Scripting language to create script files that run during runtime.
-
 Song data is located in `assets/data/<song>/`, so the Lua file containing your scripts should be located at exactly `assets/data/<song>/modchart.lua`. (replace <song> with the name of the song. for example, `assets/data/milf/` for milf)
 
 If the file doesn't exist, Lua code won't be ran.
@@ -11,32 +9,31 @@ If the file doesn't exist, Lua code won't be ran.
 Full Example
 
 ```lua
-function start (song)
-	print("Song: " .. song .. " @ " .. bpm .. " downscroll: " .. downscroll)
+function start(song) -- do nothing
+
 end
 
+function update(elapsed)
+    if difficulty == 2 and curStep > 400 then
+        local currentBeat = (songPos / 1000)*(bpm/60)
+		for i=0,7 do
+			setActorX(_G['defaultStrum'..i..'X'] + 32 * math.sin((currentBeat + i*0.25) * math.pi), i)
+			setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.cos((currentBeat + i*0.25) * math.pi), i)
+		end
+    end
 
-function update (elapsed) -- example https://twitter.com/KadeDeveloper/status/1382178179184422918
-	local currentBeat = (songPos / 1000)*(bpm/60)
-	for i=0,7 do
-		setActorX(_G['defaultStrum'..i..'X'] + 32 * math.sin((currentBeat + i*0.25) * math.pi), i)
-		setActorY(_G['defaultStrum'..i..'Y'] + 32 * math.cos((currentBeat + i*0.25) * math.pi), i)
-	end
+    if curStep >= 3 and curStep < 6 then
+        camFlash()
+    end
 end
 
-function beatHit (beat)
-   -- do nothing
+function beatHit(beat) -- do nothing
+
 end
 
-function stepHit (step)
-	-- do nothing
-end
+function stepHit(step) -- do nothing
 
-function keyPressed (key)
-	-- do nothing
 end
-
-print("Mod Chart script loaded :)")
 ```
 
 Spinning Receptor Example
@@ -126,8 +123,6 @@ Current calls to functions include,
 
 ### Global Variables
 
-Kade Engine provides a list of global variables to be used in the lua scripting interface.
-
 |        G Name        | Type  |                         Description                          |
 | :------------------: | :---: | :----------------------------------------------------------: |
 |         bpm          | Float |                 The current BPM of the song                  |
@@ -152,10 +147,6 @@ Kade Engine provides a list of global variables to be used in the lua scripting 
 |	  strumLineY	   | Float |  			The current Strum Line Y Position				  |
 
 ## Functions
-
-Kade Engine exposes a lot of functions that let you modify elements in the game field.
-
-
 
 To get started every sprite has an id, and there are some id's that are accessible without creating one.
 
@@ -481,3 +472,7 @@ Sets the window's position
 ##### resizeWindow(int width, int height)
 
 Resizes the window
+
+##### camShake(float intense)
+
+Shakes the camera
