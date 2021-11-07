@@ -45,7 +45,7 @@ class MainMenuState extends MusicBeatState
 
 	public static var nightly:String = "";
 
-	public static var visualEngineVer:String = "1.0" + nightly;
+	public static var visualEngineVer:String = "1.0-B" + nightly;
 	public static var gameVer:String = "0.2.7.1";
 
 	// var magenta:FlxSprite;
@@ -339,8 +339,8 @@ class MainMenuState extends MusicBeatState
 								{
 									if (curSelected != spr.ID)
 									{
-										FlxTween.tween(spr, {alpha: 0}, 1.3, {
-											ease: FlxEase.quadOut,
+										FlxTween.tween(spr, {alpha: 0, y: -16}, 1.3, {
+											ease: FlxEase.circOut,
 											onComplete: function(twn:FlxTween)
 											{
 												spr.kill();

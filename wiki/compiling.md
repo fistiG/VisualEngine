@@ -1,17 +1,3 @@
-# Friday Night Funkin' : The Visual Engine
-![VisualEngineLogo](logo.png)
-
-This is the Source Code for the **FNF Visual Engine**.
-
-If you are looking to contribute, [look here please](CONTRIBUTING.md).
-The changelog is located [here](CHANGELOG.md).
-
-## Mainly About
-Visual Engine (VE) is an FNF Engine mainly focused on its nice visuals, and art.
-With direct permission from KadeDeveloper, it is built over Kade Engine 1.5.1, meaning it has already built in features.
-Of course features have been added in by us personally!
-
-## How to Compile/Build Visual Engine?
 ### Required Packages
 
 1. Make sure to install [Haxe 4.1.5](https://haxe.org/download/version/4.1.5/). Installing this will download haxe to your computer, any later versions is not recommended.
@@ -88,9 +74,3 @@ If you want to compile for Linux, Mac, or any of that kind of stuff.. just repla
 
 Now that all this is done, you have did it!
 You have compiled Visual Engine successfully hopefully, now have fun. :D
-
-## Engine Credits
-
-*Go here for the credits --> [Link](CREDITS.md)*
-
-Thank you for even noticing Visual Engine. :D
