@@ -323,7 +323,7 @@ class MainMenuState extends MusicBeatState
 				if (optionShit[curSelected] == "credits")
 				{
 					FlxG.switchState(new MainMenuState());
-					fancyOpenURL("https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game");
+					fancyOpenURL("https://github.com/ItzBlueBerries/VisualEngine/blob/master/CREDITS.md");
 				}
 				else
 				{
