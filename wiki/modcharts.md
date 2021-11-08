@@ -40,4 +40,6 @@ If you would like to see examples of some modchart features from Kade Engine 1.5
 Usage:
 `camShake(intense:Float)`
 
+Description:
+Shakes the camera.
 The duration goes for as long as the `curStep` is, then it will go away.

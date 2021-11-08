@@ -3,8 +3,10 @@
 
 This is the Source Code for the **FNF Visual Engine**.
 
-If you are looking to contribute, [look here please](CONTRIBUTING.md).
-The changelog is located [here](CHANGELOG.md).
+*If you are looking to contribute, [look here please](CONTRIBUTING.md).*
+*The changelog is located [here](CHANGELOG.md).*
+*Here is also the twitter account for the engine --> [Link](https://twitter.com/EngineVisual).*
+*If you want to join the official discord server, just click [here](https://discord.com/invite/2UsNmPKxeu).*
 
 ## Mainly About
 Visual Engine (VE) is an FNF Engine mainly focused on its nice visuals, and art.

@@ -318,7 +318,7 @@ class MainMenuState extends MusicBeatState
 				if (optionShit[curSelected] == 'donate')
 				{
 					FlxG.switchState(new MainMenuState());
-					fancyOpenURL("https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game");
+					fancyOpenURL("https://discord.com/invite/2UsNmPKxeu");
 				}
 				if (optionShit[curSelected] == "credits")
 				{
