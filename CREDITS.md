@@ -8,9 +8,9 @@
 
 - [EpicGamer (Lead Coding Help)](https://twitter.com/Epic2469)
 - [Xeno/8903XR (Playtester + Ideas)](https://twitter.com/VsDeltaruneBR)
-- [JuanStarYT](https://www.instagram.com/juanstaryt/)
 
 ### Original Developers :
+
 - Ninjamuffin99 (Programmer)
 - PhantomArcade (Artist)
 - KawaiSprite (Musician)
