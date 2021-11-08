@@ -10,6 +10,12 @@
 - [Xeno/8903XR (Playtester + Ideas)](https://twitter.com/VsDeltaruneBR)
 - [JuanStarYT](https://www.instagram.com/juanstaryt/)
 
+### Original Developers :
+- Ninjamuffin99 (Programmer)
+- PhantomArcade (Artist)
+- KawaiSprite (Musician)
+- EvilSk8r (Artist)
+
 ### Special Thanks :
 
 - [KadeDeveloper (Engine Support)](https://twitter.com/KadeDeveloper)
