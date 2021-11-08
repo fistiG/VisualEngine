@@ -29,7 +29,7 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
-	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options', 'credits', 'quit'];
+	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options', 'credits', 'changelog', 'quit'];
 	#else
 	var optionShit:Array<String> = ['story mode', 'freeplay'];
 	#end
@@ -159,32 +159,37 @@ class MainMenuState extends MusicBeatState
 						case 0:
 						{
 							menuItem.setPosition(20, -300);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.69));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 1:
 						{
 							menuItem.setPosition(445, -300);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.69));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 2:
 						{
 							menuItem.setPosition(870, -300);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.69));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 3:
 						{
 							menuItem.setPosition(20, 600);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.72));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.52));
 						}
 						case 4:
 						{
 							menuItem.setPosition(445, 600);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.70));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 5:
 						{
 							menuItem.setPosition(870, 600);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.59));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.55));
+						}
+						case 6:
+						{
+							menuItem.setPosition(445, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.39));
 						}
 					}
 				}
@@ -196,34 +201,38 @@ class MainMenuState extends MusicBeatState
 						{
 							menuItem.setPosition(20, -300);
 							menuItem.alpha = 0.50;
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.69));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 1:
 						{
 							menuItem.setPosition(445, -300);
 							menuItem.alpha = 0.50;
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.69));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 2:
 						{
 							menuItem.setPosition(870, -300);
-							menuItem.alpha = 0.50;
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.69));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 3:
 						{
 							menuItem.setPosition(20, 600);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.72));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.52));
 						}
 						case 4:
 						{
 							menuItem.setPosition(445, 600);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.70));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
 						}
 						case 5:
 						{
 							menuItem.setPosition(870, 600);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.59));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.55));
+						}
+						case 6:
+						{
+							menuItem.setPosition(445, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.39));
 						}
 					}
 				}
@@ -324,6 +333,11 @@ class MainMenuState extends MusicBeatState
 				{
 					FlxG.switchState(new MainMenuState());
 					fancyOpenURL("https://github.com/ItzBlueBerries/VisualEngine/blob/master/CREDITS.md");
+				}
+				if (optionShit[curSelected] == "changelog")
+				{
+					FlxG.switchState(new MainMenuState());
+					fancyOpenURL("https://github.com/ItzBlueBerries/VisualEngine/blob/master/CHANGELOG.md");
 				}
 				else
 				{
