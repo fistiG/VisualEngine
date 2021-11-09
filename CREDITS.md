@@ -3,9 +3,10 @@
 
 - [FruitsyOG (Lead Programmer / Creator of Visual Engine)](https://twitter.com/FruitsyOG)
 - [Nikerlo (Lead Artist / Animator)](https://twitter.com/Nikerlo)
+- [Zflares (Artist / Animator)](https://twitter.com/_Zflares)
+- [Vidz (Engine Programmer)](https://twitter.com/ItsVidz3)
 - [Dev/SmallDevelopers (Engine Charter)](https://twitter.com/MoronDev)
 - [MekaZeff111 (Engine Charter)](https://twitter.com/MZeff111)
-- [Vidz (Engine Programmer)](https://twitter.com/ItsVidz3)
 
 ### Team Contributors :
 
