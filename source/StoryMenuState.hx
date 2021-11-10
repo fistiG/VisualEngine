@@ -56,6 +56,8 @@ class StoryMenuState extends MusicBeatState
 		"Hating Simulator ft. Moawling"
 	];
 
+	var yellowBgSprites:FlxSprite;
+
 	var txtWeekTitle:FlxText;
 
 	var curWeek:Int = 0;
@@ -63,7 +65,6 @@ class StoryMenuState extends MusicBeatState
 	var txtTracklist:FlxText;
 
 	var grpWeekText:FlxTypedGroup<MenuItem>;
-	var grpWeekCharacters:FlxTypedGroup<MenuCharacter>;
 
 	var grpLocks:FlxTypedGroup<FlxSprite>;
 
@@ -107,15 +108,13 @@ class StoryMenuState extends MusicBeatState
 		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 
-		FlxTween.color(yellowBG, 3, FlxColor.GRAY, 0xFFF9CF51, options);
+		// FlxTween.color(yellowBG, 3, FlxColor.GRAY, 0xFFF9CF51, options);
 
 		grpWeekText = new FlxTypedGroup<MenuItem>();
 		add(grpWeekText);
 
 		var blackBarThingie:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, 56, FlxColor.BLACK);
 		add(blackBarThingie);
-
-		grpWeekCharacters = new FlxTypedGroup<MenuCharacter>();
 
 		grpLocks = new FlxTypedGroup<FlxSprite>();
 		add(grpLocks);
@@ -150,9 +149,15 @@ class StoryMenuState extends MusicBeatState
 
 		trace("Line 96");
 
-		grpWeekCharacters.add(new MenuCharacter(0, 100, 0.5, false));
-		grpWeekCharacters.add(new MenuCharacter(450, 25, 0.9, true));
-		grpWeekCharacters.add(new MenuCharacter(850, 100, 0.5, true));
+		yellowBgSprites = new FlxSprite(yellowBG.x, yellowBG.y).loadGraphic(Paths.image('storymenu/yellowBGweeks'), true, 1280, 400);
+		yellowBgSprites.animation.add('yellow bg week 0', [0], 0, false);
+		yellowBgSprites.animation.add('yellow bg week 1', [1], 0, false);
+		yellowBgSprites.animation.add('yellow bg week 2', [2], 0, false);
+		yellowBgSprites.animation.add('yellow bg week 3', [3], 0, false);
+		yellowBgSprites.animation.add('yellow bg week 4', [4], 0, false);
+		yellowBgSprites.animation.add('yellow bg week 5', [5], 0, false);
+		yellowBgSprites.animation.add('yellow bg week 6', [6], 0, false);
+		yellowBgSprites.antialiasing = true;
 
 		difficultySelectors = new FlxGroup();
 		add(difficultySelectors);
@@ -186,7 +191,7 @@ class StoryMenuState extends MusicBeatState
 		trace("Line 150");
 
 		add(yellowBG);
-		add(grpWeekCharacters);
+		add(yellowBgSprites);
 
 		txtTracklist = new FlxText(FlxG.width * 0.05, yellowBG.x + yellowBG.height + 100, 0, "Tracks", 32);
 		txtTracklist.alignment = CENTER;
@@ -284,7 +289,6 @@ class StoryMenuState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('confirmMenu'));
 
 				grpWeekText.members[curWeek].startFlashing();
-				grpWeekCharacters.members[1].animation.play('bfConfirm');
 				stopspamming = true;
 			}
 
@@ -362,6 +366,7 @@ class StoryMenuState extends MusicBeatState
 			curWeek = 0;
 		if (curWeek < 0)
 			curWeek = weekData.length - 1;
+		yellowBgSprites.animation.play('yellow bg week ' + curWeek);
 
 		var bullShit:Int = 0;
 
@@ -382,9 +387,6 @@ class StoryMenuState extends MusicBeatState
 
 	function updateText()
 	{
-		grpWeekCharacters.members[0].setCharacter(weekCharacters[curWeek][0]);
-		grpWeekCharacters.members[1].setCharacter(weekCharacters[curWeek][1]);
-		grpWeekCharacters.members[2].setCharacter(weekCharacters[curWeek][2]);
 
 		txtTracklist.text = "- Tracks -\n";
 		var stringThing:Array<String> = weekData[curWeek];
