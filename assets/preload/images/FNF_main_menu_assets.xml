@@ -50,40 +50,76 @@
 	<SubTexture name="freeplay white0000" x="1266" y="563" width="498" height="181" frameX="0" frameY="-1" frameWidth="498" frameHeight="182"/>
 	<SubTexture name="freeplay white0001" x="1779" y="563" width="498" height="181" frameX="0" frameY="0" frameWidth="498" frameHeight="182"/>
 	<SubTexture name="freeplay white0002" x="2292" y="563" width="498" height="181" frameX="0" frameY="0" frameWidth="498" frameHeight="182"/>
-	<SubTexture name="options basic0000" x="2805" y="563" width="558" height="155"/>
-	<SubTexture name="options basic0001" x="2805" y="563" width="558" height="155"/>
-	<SubTexture name="options basic0002" x="2805" y="563" width="558" height="155"/>
-	<SubTexture name="options basic0003" x="3378" y="563" width="558" height="155"/>
-	<SubTexture name="options basic0004" x="3378" y="563" width="558" height="155"/>
-	<SubTexture name="options basic0005" x="3378" y="563" width="558" height="155"/>
-	<SubTexture name="options basic0006" x="0" y="759" width="558" height="155"/>
-	<SubTexture name="options basic0007" x="0" y="759" width="558" height="155"/>
-	<SubTexture name="options basic0008" x="0" y="759" width="558" height="155"/>
-	<SubTexture name="options white0000" x="573" y="759" width="639" height="178" frameX="-1" frameY="0" frameWidth="640" frameHeight="178"/>
-	<SubTexture name="options white0001" x="1227" y="759" width="640" height="178"/>
-	<SubTexture name="options white0002" x="1882" y="759" width="640" height="178"/>
-	<SubTexture name="quit basic0000" x="2537" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0001" x="2537" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0002" x="2537" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0003" x="2824" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0004" x="2824" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0005" x="2824" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0006" x="3111" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0007" x="3111" y="759" width="272" height="132"/>
-	<SubTexture name="quit basic0008" x="3111" y="759" width="272" height="132"/>
-	<SubTexture name="quit white0000" x="3398" y="759" width="399" height="193"/>
-	<SubTexture name="quit white0001" x="0" y="967" width="398" height="193" frameX="0" frameY="0" frameWidth="399" frameHeight="193"/>
-	<SubTexture name="quit white0002" x="413" y="967" width="398" height="193" frameX="0" frameY="0" frameWidth="399" frameHeight="193"/>
-	<SubTexture name="story mode basic0000" x="826" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0001" x="826" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0002" x="826" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0003" x="1258" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0004" x="1258" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0005" x="1258" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0006" x="1690" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0007" x="1690" y="967" width="417" height="131"/>
-	<SubTexture name="story mode basic0008" x="1690" y="967" width="417" height="131"/>
-	<SubTexture name="story mode white0000" x="2122" y="967" width="536" height="169" frameX="0" frameY="-1" frameWidth="536" frameHeight="170"/>
-	<SubTexture name="story mode white0001" x="2673" y="967" width="535" height="169" frameX="-1" frameY="0" frameWidth="536" frameHeight="170"/>
-	<SubTexture name="story mode white0002" x="3223" y="967" width="535" height="169" frameX="-1" frameY="0" frameWidth="536" frameHeight="170"/>
+	<SubTexture name="gamejolt basic0000" x="2805" y="563" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0001" x="2805" y="563" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0002" x="2805" y="563" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0003" x="3393" y="563" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0004" x="3393" y="563" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0005" x="3393" y="563" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0006" x="0" y="759" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0007" x="0" y="759" width="573" height="150"/>
+	<SubTexture name="gamejolt basic0008" x="0" y="759" width="573" height="150"/>
+	<SubTexture name="gamejolt white0000" x="588" y="759" width="634" height="166" frameX="-1" frameY="0" frameWidth="635" frameHeight="166"/>
+	<SubTexture name="gamejolt white0001" x="1237" y="759" width="635" height="166"/>
+	<SubTexture name="gamejolt white0002" x="1887" y="759" width="635" height="166"/>
+	<SubTexture name="options basic0000" x="2537" y="759" width="558" height="155"/>
+	<SubTexture name="options basic0001" x="2537" y="759" width="558" height="155"/>
+	<SubTexture name="options basic0002" x="2537" y="759" width="558" height="155"/>
+	<SubTexture name="options basic0003" x="3110" y="759" width="558" height="155"/>
+	<SubTexture name="options basic0004" x="3110" y="759" width="558" height="155"/>
+	<SubTexture name="options basic0005" x="3110" y="759" width="558" height="155"/>
+	<SubTexture name="options basic0006" x="0" y="940" width="558" height="155"/>
+	<SubTexture name="options basic0007" x="0" y="940" width="558" height="155"/>
+	<SubTexture name="options basic0008" x="0" y="940" width="558" height="155"/>
+	<SubTexture name="options white0000" x="573" y="940" width="639" height="178" frameX="-1" frameY="0" frameWidth="640" frameHeight="178"/>
+	<SubTexture name="options white0001" x="1227" y="940" width="640" height="178"/>
+	<SubTexture name="options white0002" x="1882" y="940" width="640" height="178"/>
+	<SubTexture name="quit basic0000" x="2537" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0001" x="2537" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0002" x="2537" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0003" x="2824" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0004" x="2824" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0005" x="2824" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0006" x="3111" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0007" x="3111" y="940" width="272" height="132"/>
+	<SubTexture name="quit basic0008" x="3111" y="940" width="272" height="132"/>
+	<SubTexture name="quit white0000" x="3398" y="940" width="399" height="193"/>
+	<SubTexture name="quit white0001" x="0" y="1148" width="398" height="193" frameX="0" frameY="0" frameWidth="399" frameHeight="193"/>
+	<SubTexture name="quit white0002" x="413" y="1148" width="398" height="193" frameX="0" frameY="0" frameWidth="399" frameHeight="193"/>
+	<SubTexture name="story mode basic0000" x="826" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0001" x="826" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0002" x="826" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0003" x="1258" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0004" x="1258" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0005" x="1258" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0006" x="1690" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0007" x="1690" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode basic0008" x="1690" y="1148" width="417" height="131"/>
+	<SubTexture name="story mode white0000" x="2122" y="1148" width="536" height="169" frameX="0" frameY="-1" frameWidth="536" frameHeight="170"/>
+	<SubTexture name="story mode white0001" x="2673" y="1148" width="535" height="169" frameX="-1" frameY="0" frameWidth="536" frameHeight="170"/>
+	<SubTexture name="story mode white0002" x="3223" y="1148" width="535" height="169" frameX="-1" frameY="0" frameWidth="536" frameHeight="170"/>
+	<SubTexture name="twitter basic0000" x="0" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0001" x="0" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0002" x="0" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0003" x="544" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0004" x="544" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0005" x="544" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0006" x="1088" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0007" x="1088" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter basic0008" x="1088" y="1356" width="529" height="141"/>
+	<SubTexture name="twitter white0000" x="1632" y="1356" width="630" height="168"/>
+	<SubTexture name="twitter white0001" x="2277" y="1356" width="630" height="167" frameX="0" frameY="0" frameWidth="630" frameHeight="168"/>
+	<SubTexture name="twitter white0002" x="2922" y="1356" width="630" height="167" frameX="0" frameY="0" frameWidth="630" frameHeight="168"/>
+	<SubTexture name="wiki basic0000" x="3567" y="1356" width="348" height="137"/>
+	<SubTexture name="wiki basic0001" x="3567" y="1356" width="348" height="137"/>
+	<SubTexture name="wiki basic0002" x="3567" y="1356" width="348" height="137"/>
+	<SubTexture name="wiki basic0003" x="0" y="1539" width="348" height="137"/>
+	<SubTexture name="wiki basic0004" x="0" y="1539" width="348" height="137"/>
+	<SubTexture name="wiki basic0005" x="0" y="1539" width="348" height="137"/>
+	<SubTexture name="wiki basic0006" x="363" y="1539" width="348" height="137"/>
+	<SubTexture name="wiki basic0007" x="363" y="1539" width="348" height="137"/>
+	<SubTexture name="wiki basic0008" x="363" y="1539" width="348" height="137"/>
+	<SubTexture name="wiki white0000" x="726" y="1539" width="447" height="176" frameX="0" frameY="-1" frameWidth="447" frameHeight="177"/>
+	<SubTexture name="wiki white0001" x="1188" y="1539" width="446" height="177" frameX="-1" frameY="0" frameWidth="447" frameHeight="177"/>
+	<SubTexture name="wiki white0002" x="1649" y="1539" width="446" height="177" frameX="-1" frameY="0" frameWidth="447" frameHeight="177"/>
 </TextureAtlas>

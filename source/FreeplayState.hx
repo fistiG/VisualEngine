@@ -72,7 +72,7 @@ class FreeplayState extends MusicBeatState
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.flipX = true;
-		bg.setGraphicSize(Std.int(bg.width * 1.3));
+		bg.setGraphicSize(Std.int(bg.width * 1.050));
 		add(bg);
 
 		FlxTween.color(bg, 3, FlxColor.GRAY, FlxColor.GREEN, options);

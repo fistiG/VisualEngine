@@ -29,9 +29,9 @@ class MainMenuState extends MusicBeatState
 	var menuItems:FlxTypedGroup<FlxSprite>;
 
 	#if !switch
-	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options', 'credits', 'changelog', 'quit'];
+	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options', 'credits', 'changelog', 'wiki', 'twitter', 'gamejolt', 'quit'];
 	#else
-	var optionShit:Array<String> = ['story mode', 'freeplay'];
+	var optionShit:Array<String> = ['story mode', 'freeplay', 'quit'];
 	#end
 
 	var newGaming:FlxText;
@@ -70,7 +70,7 @@ class MainMenuState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('menuDesat'));
 		bg.scrollFactor.x = 0;
 		bg.scrollFactor.y = 0.10;
-		bg.setGraphicSize(Std.int(bg.width * 1.3));
+		bg.setGraphicSize(Std.int(bg.width * 1.050));
 		bg.updateHitbox();
 		bg.screenCenter();
 		bg.antialiasing = true;
@@ -126,7 +126,7 @@ class MainMenuState extends MusicBeatState
 		flickerColor = new FlxSprite(-80).loadGraphic(Paths.image('menuDesat'));
 		flickerColor.scrollFactor.x = 0;
 		flickerColor.scrollFactor.y = 0.10;
-		flickerColor.setGraphicSize(Std.int(flickerColor.width * 1.3));
+		flickerColor.setGraphicSize(Std.int(flickerColor.width * 1.1));
 		flickerColor.updateHitbox();
 		flickerColor.screenCenter();
 		flickerColor.visible = false;
@@ -159,7 +159,7 @@ class MainMenuState extends MusicBeatState
 						case 0:
 						{
 							menuItem.setPosition(20, -300);
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.45));
 						}
 						case 1:
 						{
@@ -188,7 +188,22 @@ class MainMenuState extends MusicBeatState
 						}
 						case 6:
 						{
+							menuItem.setPosition(20, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.40));
+						}
+						case 7:
+						{
 							menuItem.setPosition(445, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.50));
+						}
+						case 8:
+						{
+							menuItem.setPosition(870, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.50));
+						}
+						case 9:
+						{
+							menuItem.setPosition(445, 2380);
 							menuItem.setGraphicSize(Std.int(menuItem.width * 0.39));
 						}
 					}
@@ -201,7 +216,7 @@ class MainMenuState extends MusicBeatState
 						{
 							menuItem.setPosition(20, -300);
 							menuItem.alpha = 0.50;
-							menuItem.setGraphicSize(Std.int(menuItem.width * 0.49));
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.45));
 						}
 						case 1:
 						{
@@ -231,7 +246,22 @@ class MainMenuState extends MusicBeatState
 						}
 						case 6:
 						{
+							menuItem.setPosition(20, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.40));
+						}
+						case 7:
+						{
 							menuItem.setPosition(445, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.50));
+						}
+						case 8:
+						{
+							menuItem.setPosition(870, 1200);
+							menuItem.setGraphicSize(Std.int(menuItem.width * 0.50));
+						}
+						case 9:
+						{
+							menuItem.setPosition(445, 2380);
 							menuItem.setGraphicSize(Std.int(menuItem.width * 0.39));
 						}
 					}
@@ -303,13 +333,13 @@ class MainMenuState extends MusicBeatState
 			if (controls.UP_P)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
-				changeItem(3);
+				changeItem(-3);
 			}
 			
 			if (controls.DOWN_P)
 			{
 				FlxG.sound.play(Paths.sound('scrollMenu'));
-				changeItem(-3);
+				changeItem(3);
 			}
 
 			if (controls.ACCEPT)
@@ -338,6 +368,21 @@ class MainMenuState extends MusicBeatState
 				{
 					FlxG.switchState(new MainMenuState());
 					fancyOpenURL("https://github.com/ItzBlueBerries/VisualEngine/blob/master/CHANGELOG.md");
+				}
+				if (optionShit[curSelected] == 'wiki')
+				{
+					FlxG.switchState(new MainMenuState());
+					fancyOpenURL("https://github.com/ItzBlueBerries/VisualEngine/tree/master/wiki");
+				}
+				if (optionShit[curSelected] == "twitter")
+				{
+					FlxG.switchState(new MainMenuState());
+					fancyOpenURL("https://twitter.com/EngineVisual");
+				}
+				if (optionShit[curSelected] == "gamejolt")
+				{
+					FlxG.switchState(new MainMenuState());
+					fancyOpenURL("https://gamejolt.com/games/visuale/661904");
 				}
 				else
 				{
