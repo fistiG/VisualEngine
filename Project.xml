@@ -104,6 +104,10 @@
 	<assets path="assets/fonts" embed='true'/>
 	<!-- _______________________________ Libraries ______________________________ -->
 
+    <haxelib name="tentools" />
+	<haxelib name="systools" />
+	<ndll name="systools" haxelib="systools" />
+
 	<haxelib name="flixel" />
 	<haxedev set='webgl' />
 

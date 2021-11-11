@@ -37,7 +37,13 @@ haxelib install linc_luajit
 haxelib git faxe https://github.com/uhrobots/faxe
 haxelib git polymod https://github.com/larsiusprime/polymod.git
 haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+haxelib git tentools https://github.com/TentaRJ/tentools.git
+haxelib git systools https://github.com/haya3218/systools
+haxelib run lime rebuild systools [windows, mac, linux]
 ```
+
+A few gamejolt achievement things are needed to be done also.
+Click here to get started. --> [Link](wiki/gamejolt.md).
 
 This should be everything that you need to install with HaxeLib, now moving on.
 

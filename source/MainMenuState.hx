@@ -1,5 +1,7 @@
 package;
 
+import GameJolt.GameJoltAPI;
+import GameJolt.GameJoltLogin;
 import Controls.KeyboardScheme;
 import flixel.FlxG;
 import flixel.FlxObject;
@@ -59,6 +61,9 @@ class MainMenuState extends MusicBeatState
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
+
+		// VISEAL ENINE ACEIVEMENT?
+		GameJoltAPI.getTrophy(151709);
 
 		if (!FlxG.sound.music.playing)
 		{
@@ -327,7 +332,7 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.BACK)
 			{
-				FlxG.switchState(new TitleState());
+				FlxG.switchState(new GameJoltLogin());
 			}
 
 			if (controls.UP_P)
