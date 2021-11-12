@@ -1,5 +1,6 @@
 package;
 
+import states.MainMenuState;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;

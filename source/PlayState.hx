@@ -1,5 +1,7 @@
 package;
 
+import states.MusicBeatState;
+import options.OptionsMenu;
 import flixel.input.keyboard.FlxKey;
 import haxe.Exception;
 import openfl.geom.Matrix;
@@ -10,14 +12,42 @@ import flixel.graphics.FlxGraphic;
 import openfl.utils.AssetManifest;
 import openfl.utils.AssetLibrary;
 import flixel.system.FlxAssets;
+import other.Replay;
+import other.Note;
+import extras.BackgroundDancer;
+import extras.BackgroundGirls;
+import other.WiggleEffect;
+import score.Ratings;
+import settings.CoolUtil;
+import other.NGio;
+import score.Highscore;
+import score.Ratings;
+import extras.GitarooPause;
+import score.ConvertScore;
+
+// STATE POWERRRRRRRRRRRRRRRRRRRR
+
+import states.MainMenuState;
+import states.FreeplayState;
+import states.LoadingState;
+import states.PauseSubState;
+import states.OutdatedSubState;
+import states.StoryMenuState;
+import states.LoadReplayState;
+import states.GameOverState;
+import states.GameOverSubstate;
+import states.ControlsSubState;
+import states.ChartingState;
+import states.ButtonRemapSubstate;
+import states.TitleState;
 
 import lime.app.Application;
 import lime.media.AudioContext;
 import lime.media.AudioManager;
 import openfl.Lib;
-import Section.SwagSection;
+import other.Section.SwagSection;
 import Song.SwagSong;
-import WiggleEffect.WiggleEffectType;
+import other.WiggleEffect.WiggleEffectType;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -55,7 +85,7 @@ import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 
 #if windows
-import Discord.DiscordClient;
+import extras.Discord.DiscordClient;
 #end
 #if windows
 import Sys;

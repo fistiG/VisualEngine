@@ -1,5 +1,6 @@
 package;
 
+import states.TitleState;
 import openfl.display.BlendMode;
 import openfl.text.TextFormat;
 import openfl.display.Application;

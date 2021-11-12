@@ -12,7 +12,7 @@ Alright.. Great.
 
 Here are some things you may want to change before you get to your achieve adding:
 
-**`In GJKeys.hx` (Add this file)**
+**`In GJKeys.hx` (Add this file to Options Folder)**
 ```haxe
 package;
 class GJKeys

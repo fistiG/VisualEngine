@@ -19,6 +19,8 @@ import llua.LuaL;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
+import states.LoadingState;
+import states.MainMenuState;
 
 class ModchartState 
 {
