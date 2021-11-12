@@ -12,7 +12,7 @@ Alright.. Great.
 
 Here are some things you may want to change before you get to your achieve adding:
 
-**`In GJKeys.hx` (Add this file to Other Folder)**
+**`In GJKeys.hx` (Add this file to the Other Folder)**
 ```haxe
 package;
 class GJKeys
@@ -26,12 +26,12 @@ Also.. Make sure you add your game's private API key. Should be in the game's AP
 `EX: games/(GAME_ID)/api`
 ***DO NOT SHARE YOUR API KEY AT ALL! THIS IS VERY DANGEROUS AND USERS CAN USE IT TO MESS UP YOUR GAME.***
 
-**`In MainMenuSate.hx`**
+**`In MainMenuState.hx`**
 ```haxe
 GameJoltAPI.getTrophy(151709);
 ```
 Make sure to change/remove this.. or else your game may break or something.
-This is a trophyID from the Visual Engine Gamejolt Page, this will not work with your game. *(Unless you keep our ID there, still not sure.)*
+This is a trophyID from the Visual Engine Gamejolt Page, this will not work with your game.
 
 After all that mess, you should be done!
 Go ham with all those achievements/trophies you are gonna giveout, haha. *(Or not, they may be EXP abuse for gamejolt lol)*
