@@ -6,6 +6,7 @@
 - [Zflares (Artist / Animator)](https://twitter.com/_Zflares)
 - [Vidz (Engine Programmer)](https://twitter.com/ItsVidz3)
 - [MekaZeff111 (Engine Charter)](https://twitter.com/MZeff111)
+- [PJ9D (Engine Charter)](https://www.youtube.com/channel/UCkJvqtijU9JG57x7KLcjqqw)
 
 ### Team Contributors :
 
