@@ -12,6 +12,7 @@
 
 - [EpicGamer (Lead Coding Help)](https://twitter.com/Epic2469)
 - [Xeno/8903XR (Playtester + Ideas)](https://twitter.com/VsDeltaruneBR)
+- [JuanStarYT (Playtester)](https://www.youtube.com/channel/UCb5nI-rV8VIL7A9oZXbArZw)
 
 ### Original Developers :
 
